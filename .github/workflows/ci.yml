@@ -14,11 +14,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: NPM install 📦
-        uses: bahmutov/npm-install@v1
-
-      - run: yarn docs:develop &
-      - run: yarn dev:ci
+      - name: Install and test 📦✅
+        uses: cypress-io/github-action@v1
+        with:
+          start: 'npm run docs:dev'
+          wait-on: 'http://localhost:8080'
 
       - name: Build site 🏗
         run: yarn docs:build
