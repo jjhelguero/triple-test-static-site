@@ -7,10 +7,15 @@
   "license": "MIT",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "dev": "start-test docs:dev 8080 cy:open"
   },
   "devDependencies": {
+    "cypress": "^12.7.0",
     "serve": "^14.2.0",
+    "start-server-and-test": "^1.15.4",
     "vuepress": "^1.9.9"
   }
 }
