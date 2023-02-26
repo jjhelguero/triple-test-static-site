@@ -13,9 +13,9 @@ jobs:
         uses: actions/checkout@v3
         with:
           persist-credentials: false
-      # - uses: actions/setup-node@v3
-      #   with:
-      #       node-version: 16.15.0
+      - uses: actions/setup-node@v3
+        with:
+            node-version: 16.15.0
 
       - name: Install and test 📦✅
         uses: cypress-io/github-action@v1
