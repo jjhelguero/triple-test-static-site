@@ -18,7 +18,7 @@ jobs:
             node-version: 16.15.0
 
       - name: Install and test 📦✅
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v5
         with:
           start: 'yarn docs:dev'
           wait-on: 'http://localhost:8080'
