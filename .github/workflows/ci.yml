@@ -17,8 +17,11 @@ jobs:
       - name: NPM install 📦
         uses: bahmutov/npm-install@v1
 
+      - run: yarn docs:develop &
+      - run: yarn dev:ci
+
       - name: Build site 🏗
-        run: npm run docs:build
+        run: yarn docs:build
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy 🚀
