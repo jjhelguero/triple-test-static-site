@@ -1,9 +1,9 @@
 name: ci
-# only deploy site from master branch
+# only deploy site from main branch
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   test:
     runs-on: ubuntu-latest
