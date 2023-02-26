@@ -4,4 +4,4 @@
 - Banana
 - Apple
 
-Go to more [fruits](./moreFruits.md)
+Go to [More Fruits!](./moreFruits.md)
