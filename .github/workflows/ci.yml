@@ -36,9 +36,9 @@ jobs:
         with:
           # we have already installed all dependencies above
           install: false
-          start: 'npx serve output'
-          wait-on: 'http://localhost:5000/triple-tested/'
-          config: baseUrl=http://localhost:5000/triple-tested/
+          start: 'yarn serve output'
+          wait-on: 'http://localhost:3000/triple-tested/'
+          config: baseUrl=http://localhost:3000/triple-tested/
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy 🚀
